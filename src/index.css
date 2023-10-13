@@ -6,3 +6,8 @@ body,
 html {
 	font-family: "Poppins", sans-serif;
 }
+
+.dash--bg {
+	background: rgba(219, 120, 45, 0.12);
+	border-radius: 10px;
+}

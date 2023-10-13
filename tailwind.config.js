@@ -8,7 +8,10 @@ module.exports = {
       colors: {
         'indigo-blue': '#1D396B',
         'gunmetal-black': '#2D3039',
-        'alice-blue': '#F4F7FC'
+        'alice-blue': '#F4F7FC',
+        'light-orange': '#F5832B1F',
+        'yankees-blue': '#242C46',
+        'princeton-orange': '#F5832B'
       },
     },
   },
