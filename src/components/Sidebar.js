@@ -1,5 +1,3 @@
-import React from 'react'
-
 import Dashboard from '../assets/Dashboard.svg'
 import Order from '../assets/Orders.svg'
 import Product from '../assets/Products.svg'

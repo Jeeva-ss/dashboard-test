@@ -11,3 +11,41 @@ html {
 	background: rgba(219, 120, 45, 0.12);
 	border-radius: 10px;
 }
+
+label input[type="radio"] {
+	display: none;
+}
+label input[type="radio"] ~ span {
+	position: relative;
+	display: inline-block;
+	padding: 3px 0 3px 25px;
+}
+label input[type="radio"] ~ span:before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 18px;
+	height: 18px;
+	background: #fff;
+	margin-right: 5px;
+	border: 1px solid #ccc;
+	border-radius: 50%;
+	left: 0;
+	top: 0;
+	box-sizing: border-box;
+	transition: all 300ms ease-in-out;
+}
+label input[type="radio"]:checked ~ span:before {
+	border: 3px solid #1abcb0;
+}
+
+.CircularProgressbar .CircularProgressbar-text {
+	font-weight: 700;
+}
+
+.custom-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

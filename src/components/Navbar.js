@@ -1,6 +1,3 @@
-import React from 'react'
-
-
 import Mail from '../assets/Mail.svg'
 import Notification from '../assets/Notification.svg'
 import User from '../assets/User.png'
