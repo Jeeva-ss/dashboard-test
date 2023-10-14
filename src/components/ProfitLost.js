@@ -60,7 +60,7 @@ export const data = {
 
 export default function ProfitLost() {
   return (
-    <div className='grow'>
+    <div className='flex-auto w-72'>
       <Card>
         <div className="flex justify-between">
           <p className='text-xl text-indigo-blue font-bold'>Total Profit & Lost</p>

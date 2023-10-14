@@ -8,7 +8,7 @@ export default function Target() {
 
   const percentage = 67;
   return (
-    <div className='grow'>
+    <div className='flex-auto w-72'>
       <Card>
         <div >
           <div className='flex justify-between'>

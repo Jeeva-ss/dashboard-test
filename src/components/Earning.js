@@ -25,7 +25,7 @@ export const data = {
 
 export default function Earning() {
   return (
-    <div className='grow'>
+    <div className='flex-auto w-72'>
       <Card >
         <div className="flex justify-between">
           <p className='text-xl text-indigo-blue font-bold'>Total Earnings</p>
@@ -35,7 +35,7 @@ export default function Earning() {
           </div>
         </div>
         <div className='flex justify-evenly items-center'>
-          <div className='w-[250px]'>
+          <div className='w-[200px]'>
             <Doughnut data={data} />
           </div>
           <div>

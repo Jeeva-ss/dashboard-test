@@ -7,10 +7,7 @@ import Target from './components/Target';
 
 // import DropDown from './assets/Drop Down.svg'
 import Earning from './components/Earning';
-// import ProfitLost from './components/ProfitLost';
-
-
-
+import ProfitLost from './components/ProfitLost';
 
 function App() {
   return (
@@ -26,7 +23,7 @@ function App() {
           <div className='flex flex-wrap'>
             <Target />
             <Earning />
-            {/* <ProfitLost /> */}
+            <ProfitLost />
           </div>
         </div>
       </div>
