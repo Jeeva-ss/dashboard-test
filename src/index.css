@@ -49,3 +49,54 @@ label input[type="radio"]:checked ~ span:before {
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
+
+.outer-r {
+	position: relative;
+	border-radius: 99px;
+	/* border: 2px solid red; */
+	padding: 15px;
+}
+
+.outer-profit-r {
+	border: 2px solid #f3b74c;
+}
+
+.outer-margin-r {
+	border: 2px solid #7690e5;
+}
+
+.outer-lost-r {
+	border: 2px solid #46ca83;
+}
+
+.outer-other-r {
+	border: 2px solid #e96559;
+}
+
+.inner-r {
+	border-radius: 99px;
+	width: 12px;
+	height: 12px;
+	/* background-color: rebeccapurple; */
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 10px;
+}
+
+.profit-r {
+	background-color: #f3b74c;
+}
+
+.margin-r {
+	background-color: #7690e5;
+}
+
+.lost-r {
+	background-color: #46ca83;
+}
+
+.other-r {
+	background-color: #e96559;
+}

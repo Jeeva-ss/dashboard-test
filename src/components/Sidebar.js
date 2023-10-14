@@ -8,7 +8,7 @@ import Test from '../assets/Test Logo.svg'
 
 export default function Sidebar() {
   return (
-    <div className='w-[320px] bg-yankees-blue px-4 h-screen'>
+    <div className=' bg-yankees-blue px-4 h-screen'>
       <div className='pt-6'>
         <img src={Test} alt="logo" />
       </div>
