@@ -70,7 +70,7 @@ export default function ProfitLost() {
           </div>
         </div>
         <div className='flex justify-center items-center'>
-          <div className=''>
+          <div className='custom-center'>
             <Bar options={options} data={data} />
           </div>
         </div>

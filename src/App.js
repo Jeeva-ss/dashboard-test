@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <div className='flex'>
-        <div className='hidden md:block bg-yankees-blue w-2/4 lg:w-auto'>
+        <div className='hidden md:block bg-yankees-blue w-2/4 xl:w-auto'>
           <Sidebar />
         </div>
         <div className='grow'>
