@@ -11,7 +11,7 @@ export default function Country() {
   });
 
   return (
-    <div className='flex-grow'>
+    <div className='grow-[3]'>
       <Card>
         <div className="flex justify-between">
           <p className='text-xl text-indigo-blue font-bold'>Customer visit on site</p>

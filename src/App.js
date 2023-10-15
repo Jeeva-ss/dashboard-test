@@ -21,7 +21,7 @@ function App() {
           <div>
             <Navbar />
           </div>
-          <div className='flex'>
+          <div className='flex flex-wrap'>
             <Country />
             <Income />
           </div>

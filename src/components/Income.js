@@ -39,10 +39,10 @@ export default function Income() {
   }]
 
   return (
-    <div className="w-[366px]">
+    <div className="grow-[1]">
       <p className="p-5 text-xl font-bold text-indigo-blue">Income Recived By</p>
       {incomeList.map((x, index) => (
-        <div className="flex items-center justify-between px-5 mb-0.5 bg-opacity-50 bg-alice-blue h-[57px] w-[366px]" key={index}>
+        <div className="flex items-center justify-between px-5 mb-0.5 bg-opacity-50 bg-alice-blue h-[39px] " key={index}>
           <div className="flex items-center justify-between gap-x-2.5">
             <img src={x.img} alt="payments" />
             <p className="text-sm font-medium text-gunmetal-black">{x.mode}</p>
