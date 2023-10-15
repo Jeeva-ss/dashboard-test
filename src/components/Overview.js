@@ -97,13 +97,13 @@ export const data4 = {
 export default function Overview() {
   return (
     <div className="flex flex-wrap">
-      <div className="w-full md:w-6/12 lg:w-6/12 xl:w-3/12 ">
+      <div className="w-6/12 md:w-6/12 lg:w-6/12 xl:w-3/12 ">
         <Card2>
           <div className="flex items-center justify-between mb-2">
             <div className="flex items-center justify-between gap-1">
               <img src={Customer} alt="pic" width={15} />
               <p className="text-xs font-bold text-indigo-blue">
-                Total Customer visit
+                Customer visit
               </p>
             </div>
             <p className="text-xs font-medium text-gunmetal-black">721,345</p>
@@ -111,25 +111,25 @@ export default function Overview() {
           <Line options={options} data={data1} />
         </Card2>
       </div>
-      <div className="w-full md:w-6/12 lg:w-6/12 xl:w-3/12 ">
+      <div className="w-6/12 md:w-6/12 lg:w-6/12 xl:w-3/12 ">
         <Card2>
           <div className="flex items-center justify-between mb-2">
             <div className="flex items-center justify-between gap-1">
               <img src={Orders} alt="pic" width={15} />
-              <p className="text-xs font-bold text-indigo-blue">Total Orders</p>
+              <p className="text-xs font-bold text-indigo-blue">Orders</p>
             </div>
             <p className="text-xs font-medium text-gunmetal-black">23,482</p>
           </div>
           <Line options={options} data={data2} />
         </Card2>
       </div>
-      <div className="w-full md:w-6/12 lg:w-6/12 xl:w-3/12 ">
+      <div className="w-6/12 md:w-6/12 lg:w-6/12 xl:w-3/12 ">
         <Card2>
           <div className="flex items-center justify-between mb-2">
             <div className="flex items-center justify-between gap-1">
               <img src={Pending} alt="pic" width={10} />
               <p className="text-xs font-bold text-indigo-blue">
-                Total Pending
+                Pending
               </p>
             </div>
             <p className="text-xs font-medium text-gunmetal-black">4,440</p>
@@ -137,13 +137,13 @@ export default function Overview() {
           <Line options={options} data={data3} />
         </Card2>
       </div>
-      <div className="w-full md:w-6/12 lg:w-6/12 xl:w-3/12 ">
+      <div className="w-6/12 md:w-6/12 lg:w-6/12 xl:w-3/12 ">
         <Card2>
           <div className="flex items-center justify-between mb-2">
             <div className="flex items-center justify-between gap-1">
               <img src={Delivered} alt="pic" width={15} />
               <p className="text-xs font-bold text-indigo-blue">
-                Total Delivered
+                Delivered
               </p>
             </div>
             <p className="text-xs font-medium text-gunmetal-black">19,442</p>
