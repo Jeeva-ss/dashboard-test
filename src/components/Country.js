@@ -1,34 +1,35 @@
-import React from 'react'
-import Card from './Card'
+import React from "react";
+import Card from "./Card";
 import DatamapsIndia from "react-datamaps-india";
-import states from './state.js';
+import states from "./state.js";
 
 export default function Country() {
-
   let regionData = {};
   states.forEach((state) => {
     regionData[state.state_name] = { state_id: state.state_id };
   });
 
   return (
-    <div className='grow-[3]'>
+    <div className="grow-[3]">
       <Card>
         <div className="flex justify-between">
-          <p className='text-xs md:text-xl text-indigo-blue font-bold'>Customer visit on site</p>
-          <div className='flex justify-between items-center gap-1 md:gap-2'>
-            <p className='text-gunmetal-black text-xs font-medium'>Year</p>
-            <p className='text-gunmetal-black text-xs font-medium'>Month</p>
-            <p className='text-gunmetal-black text-xs font-medium'>Week</p>
-            <p className='text-gunmetal-black text-xs font-medium'>Day</p>
+          <p className="text-xs font-bold md:text-xl text-indigo-blue">
+            Customer visit on site
+          </p>
+          <div className="flex items-center justify-between gap-1 md:gap-2">
+            <p className="text-xs font-medium text-gunmetal-black">Year</p>
+            <p className="text-xs font-medium text-gunmetal-black">Month</p>
+            <p className="text-xs font-medium text-gunmetal-black">Week</p>
+            <p className="text-xs font-medium text-gunmetal-black">Day</p>
           </div>
         </div>
-        <div className='relative w-[250px] md:w-[300px] mx-auto'>
-          <div className='text-center'>
+        <div className="relative w-[250px] md:w-[300px] mx-auto">
+          <div className="text-center">
             <DatamapsIndia
               regionData={{
                 Maharashtra: {
-                  score: 20
-                }
+                  score: 20,
+                },
               }}
               hoverComponent={({ value }) => {
                 return (
@@ -46,12 +47,12 @@ export default function Country() {
                 hoverBorderColor: "#8D8D8D",
                 hoverColor: "coral",
                 height: 10,
-                width: 10
+                width: 10,
               }}
             />
           </div>
         </div>
       </Card>
     </div>
-  )
+  );
 }
