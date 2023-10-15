@@ -10,12 +10,13 @@ import Earning from './components/Earning';
 import ProfitLost from './components/ProfitLost';
 import Country from './components/Country';
 import Overview from './components/Overview';
+import Order from './components/Order';
 
 function App() {
   return (
     <div className="App">
       <div className='flex'>
-        <div className='hidden md:block bg-yankees-blue'>
+        <div className='hidden md:block bg-yankees-blue w-2/4 lg:w-auto'>
           <Sidebar />
         </div>
         <div className='grow'>
@@ -35,6 +36,8 @@ function App() {
             <Earning />
             <ProfitLost />
           </div>
+          {/* <p className='text-indigo-blue text-xl font-bold m-2'>Customer Order Details</p> */}
+          <Order />
         </div>
       </div>
 

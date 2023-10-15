@@ -100,11 +100,11 @@ export const data4 = {
 export default function Overview() {
   return (
     <div className='flex flex-wrap'>
-      <div className='w-full lg:w-6/12 xl:w-3/12 '>
+      <div className='w-full md:w-6/12 lg:w-6/12 xl:w-3/12 '>
         <Card2>
           <div className='flex justify-between items-center mb-2'>
             <div className='flex justify-between gap-1 items-center'>
-              <img src={Customer} alt="pic" width={20} />
+              <img src={Customer} alt="pic" width={15} />
               <p className='text-indigo-blue text-xs font-bold'>Total Customer visit</p>
             </div>
             <p className='text-gunmetal-black text-xs font-medium'>
@@ -114,11 +114,11 @@ export default function Overview() {
           <Line options={options} data={data1} />
         </Card2>
       </div>
-      <div className='w-full lg:w-6/12 xl:w-3/12 '>
+      <div className='w-full md:w-6/12 lg:w-6/12 xl:w-3/12 '>
         <Card2>
           <div className='flex justify-between items-center mb-2'>
             <div className='flex justify-between gap-1 items-center'>
-              <img src={Orders} alt="pic" width={20} />
+              <img src={Orders} alt="pic" width={15} />
               <p className='text-indigo-blue text-xs font-bold'>Total Orders</p>
             </div>
             <p className='text-gunmetal-black text-xs font-medium'>
@@ -128,11 +128,11 @@ export default function Overview() {
           <Line options={options} data={data2} />
         </Card2>
       </div>
-      <div className='w-full lg:w-6/12 xl:w-3/12 '>
+      <div className='w-full md:w-6/12 lg:w-6/12 xl:w-3/12 '>
         <Card2>
           <div className='flex justify-between items-center mb-2'>
             <div className='flex justify-between gap-1 items-center'>
-              <img src={Pending} alt="pic" width={20} />
+              <img src={Pending} alt="pic" width={10} />
               <p className='text-indigo-blue text-xs font-bold'>Total Pending</p>
             </div>
             <p className='text-gunmetal-black text-xs font-medium'>
@@ -142,11 +142,11 @@ export default function Overview() {
           <Line options={options} data={data3} />
         </Card2>
       </div>
-      <div className='w-full lg:w-6/12 xl:w-3/12 '>
+      <div className='w-full md:w-6/12 lg:w-6/12 xl:w-3/12 '>
         <Card2>
           <div className='flex justify-between items-center mb-2'>
             <div className='flex justify-between gap-1 items-center'>
-              <img src={Delivered} alt="pic" width={20} />
+              <img src={Delivered} alt="pic" width={15} />
               <p className='text-indigo-blue text-xs font-bold'>Total Delivered</p>
             </div>
             <p className='text-gunmetal-black text-xs font-medium'>

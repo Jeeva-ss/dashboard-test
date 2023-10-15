@@ -11,7 +11,8 @@ module.exports = {
         'alice-blue': '#F4F7FC',
         'light-orange': '#F5832B1F',
         'yankees-blue': '#242C46',
-        'princeton-orange': '#F5832B'
+        'princeton-orange': '#F5832B',
+        'light-gray': '#C1CFD9'
       },
     },
   },
