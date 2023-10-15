@@ -112,3 +112,54 @@ label input[type="radio"]:checked ~ span:before {
 	border: 1px solid #f5832b33;
 	border-radius: 5px;
 }
+
+.paid {
+	padding: 4px 8px;
+	border-radius: 4px;
+	font-size: 12px;
+	color: white;
+	background: #3bdd9d;
+}
+
+.done {
+	padding: 4px 8px;
+	border-radius: 4px;
+	font-size: 12px;
+	color: #3bdd9d;
+	border: 1px solid #3bdd9d;
+	background-color: #3bdd9c30;
+}
+
+.fail {
+	padding: 4px 8px;
+	border-radius: 4px;
+	font-size: 12px;
+	color: white;
+	background: #e96559;
+}
+
+.failed {
+	padding: 4px 8px;
+	border-radius: 4px;
+	font-size: 12px;
+	color: #e96559;
+	border: 1px solid #e96559;
+	background-color: #e9655930;
+}
+
+.process {
+	padding: 4px 8px;
+	border-radius: 4px;
+	font-size: 12px;
+	color: white;
+	background: #f6ac41;
+}
+
+.processing {
+	padding: 4px 8px;
+	border-radius: 4px;
+	font-size: 12px;
+	color: #f6ac41;
+	border: 1px solid #f6ac41;
+	background-color: #f6ab4130;
+}

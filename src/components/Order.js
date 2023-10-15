@@ -2,6 +2,36 @@ import React from 'react'
 import Card2 from './Card2'
 
 export default function Order() {
+
+  const data = [{
+    order: '#243654',
+    name: 'Quiche Hollandaise',
+    address: '4693 White Oak Drive Kansas City, MO',
+    date: '20 Nov 2021',
+    type: 'Paytm',
+    pstatus: 'Paid',
+    dstatus: 'Done'
+  },
+  {
+    order: '#243654',
+    name: 'Quiche Hollandaise',
+    address: '4693 White Oak Drive Kansas City, MO',
+    date: '20 Nov 2021',
+    type: 'Paytm',
+    pstatus: 'Failed',
+    dstatus: 'Failed'
+  },
+  {
+    order: '#243654',
+    name: 'Quiche Hollandaise',
+    address: '4693 White Oak Drive Kansas City, MO',
+    date: '20 Nov 2021',
+    type: 'Paytm',
+    pstatus: 'Paid',
+    dstatus: 'Failed',
+  },
+  ]
+
   return (
     <div>
       <Card2>
@@ -13,6 +43,31 @@ export default function Order() {
             <p className='text-gunmetal-black text-xs font-medium'>Week</p>
             <p className='text-gunmetal-black text-xs font-medium'>Day</p>
           </div>
+        </div>
+
+
+        {/* Grid */}
+
+        <div className='my-2'>
+
+          {data.map((x) => (
+            <div className='flex flex-col md:flex-row items-start shadow-sm md:items-center justify-between my-2 rounded p-2 gap-2'>
+              <p className='text-xs text-indigo-blue font-bold'>{x.order}</p>
+              <p className='text-xs text-indigo-blue font-bold'>{x.name}</p>
+              <p className='text-xs text-indigo-blue font-bold'>{x.address}</p>
+              <p className='text-xs text-gray-300 font-bold'>{x.date}</p>
+              <p className='text-xs text-indigo-blue font-bold'>{x.type}</p>
+              <div className='flex gap-1 items-center'>
+                {x.pstatus ? <button className={x.pstatus === 'Paid' ? 'paid' : 'fail'}>
+                  <p>{x.pstatus}</p>
+                </button> : ''}
+                {x.dstatus ?
+                  <button className={x.dstatus === 'Done' ? 'paid' : 'failed'}>
+                    <p>{x.dstatus}</p>
+                  </button> : ''}
+              </div>
+            </div>
+          ))}
         </div>
 
         {/* Pagination */}
