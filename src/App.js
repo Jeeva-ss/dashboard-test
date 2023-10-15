@@ -11,19 +11,20 @@ import ProfitLost from './components/ProfitLost';
 import Country from './components/Country';
 import Overview from './components/Overview';
 import Order from './components/Order';
+import Mobile from './components/Mobile';
 
 function App() {
   return (
-    <div className="App">
+    <div className="relative App">
       <div className='flex'>
-        <div className='hidden md:block bg-yankees-blue w-2/4 xl:w-auto'>
+        <div className='hidden w-2/4 md:block bg-yankees-blue xl:w-auto'>
           <Sidebar />
         </div>
         <div className='grow'>
           <div>
             <Navbar />
           </div>
-          <p className='text-indigo-blue text-xl font-bold m-2'>Overview</p>
+          <p className='m-2 text-xl font-bold text-indigo-blue'>Overview</p>
           <div>
             <Overview />
           </div>
@@ -36,13 +37,12 @@ function App() {
             <Earning />
             <ProfitLost />
           </div>
-          {/* <p className='text-indigo-blue text-xl font-bold m-2'>Customer Order Details</p> */}
           <Order />
         </div>
       </div>
-
-
-
+      <div className='fixed bottom-0 left-0 z-20 block w-full md:hidden'>
+        <Mobile />
+      </div>
     </div>
   );
 }
