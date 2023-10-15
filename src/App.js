@@ -3,9 +3,6 @@ import Income from './components/Income';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import Target from './components/Target';
-// import Card from './components/Card';
-
-// import DropDown from './assets/Drop Down.svg'
 import Earning from './components/Earning';
 import ProfitLost from './components/ProfitLost';
 import Country from './components/Country';

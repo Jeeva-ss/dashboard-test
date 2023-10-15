@@ -81,7 +81,7 @@ export default function Order() {
         </div>
 
         {/* Pagination */}
-        <div className="flex flex-col items-center justify-between gap-1 my-4 md:flex-row">
+        <div className="flex flex-col items-center justify-between gap-1 mb-14 md:mb-4 md:flex-row">
           <div>
             <p className="text-sm text-light-gray">
               Showing 1 to 10 of 100 entries
