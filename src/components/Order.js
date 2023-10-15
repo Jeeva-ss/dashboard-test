@@ -18,8 +18,8 @@ export default function Order() {
     address: '4693 White Oak Drive Kansas City, MO',
     date: '20 Nov 2021',
     type: 'Paytm',
-    pstatus: 'Failed',
-    dstatus: 'Failed'
+    pstatus: 'Paid',
+    dstatus: 'Done'
   },
   {
     order: '#243654',
@@ -28,7 +28,7 @@ export default function Order() {
     date: '20 Nov 2021',
     type: 'Paytm',
     pstatus: 'Paid',
-    dstatus: 'Failed',
+    dstatus: 'Done',
   },
   ]
 
@@ -50,8 +50,8 @@ export default function Order() {
 
         <div className='my-2'>
 
-          {data.map((x) => (
-            <div className='flex flex-col md:flex-row items-start shadow-sm md:items-center justify-between my-2 rounded p-2 gap-2'>
+          {data.map((x, index) => (
+            <div key={index} className='flex flex-col md:flex-row items-start shadow-sm md:items-center justify-between my-2 rounded p-2 gap-2'>
               <p className='text-xs text-indigo-blue font-bold'>{x.order}</p>
               <p className='text-xs text-indigo-blue font-bold'>{x.name}</p>
               <p className='text-xs text-indigo-blue font-bold'>{x.address}</p>
@@ -71,7 +71,7 @@ export default function Order() {
         </div>
 
         {/* Pagination */}
-        <div className='md:flex-row justify-between items-center flex flex-col gap-1'>
+        <div className='md:flex-row my-4 justify-between items-center flex flex-col gap-1'>
           <div>
             <p className='text-light-gray text-sm'>Showing 1 to 10 of 100 entries</p>
           </div>
