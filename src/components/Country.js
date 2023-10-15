@@ -14,15 +14,15 @@ export default function Country() {
     <div className='grow-[3]'>
       <Card>
         <div className="flex justify-between">
-          <p className='text-xl text-indigo-blue font-bold'>Customer visit on site</p>
-          <div className='flex justify-between items-center gap-2'>
+          <p className='text-xs md:text-xl text-indigo-blue font-bold'>Customer visit on site</p>
+          <div className='flex justify-between items-center gap-1 md:gap-2'>
             <p className='text-gunmetal-black text-xs font-medium'>Year</p>
             <p className='text-gunmetal-black text-xs font-medium'>Month</p>
             <p className='text-gunmetal-black text-xs font-medium'>Week</p>
             <p className='text-gunmetal-black text-xs font-medium'>Day</p>
           </div>
         </div>
-        <div className='relative w-[300px] mx-auto'>
+        <div className='relative w-[250px] md:w-[300px] mx-auto'>
           <div className='text-center'>
             <DatamapsIndia
               regionData={{

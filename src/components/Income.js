@@ -40,7 +40,7 @@ export default function Income() {
 
   return (
     <div className="grow-[1]">
-      <p className="p-5 text-xl font-bold text-indigo-blue">Income Recived By</p>
+      <p className="p-5 text-xs md:text-xl font-bold text-indigo-blue">Income Recived By</p>
       {incomeList.map((x, index) => (
         <div className="flex items-center justify-between px-5 mb-0.5 bg-opacity-50 bg-alice-blue h-[39px] " key={index}>
           <div className="flex items-center justify-between gap-x-2.5">

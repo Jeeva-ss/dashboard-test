@@ -8,17 +8,17 @@ export default function Target() {
 
   const percentage = 67;
   return (
-    <div className='flex-auto w-72'>
+    <div className='flex-auto '>
       <Card>
         <div >
-          <div className='flex justify-between'>
-            <p className='text-xl text-indigo-blue font-bold'>Total Target Achievded</p>
+          <div className='flex justify-between mb-2'>
+            <p className='text-xs md:text-xl text-indigo-blue font-bold'>Total Target Achievded</p>
             <div className='flex justify-between items-center gap-2'>
               <p className='text-gunmetal-black text-xs font-medium'>Day</p>
               <img src={DropDown} alt="arrowdown" />
             </div>
           </div>
-          <div className='flex flex-col justify-evenly items-center custom-center'>
+          <div className='mt-4 md:mt-0 flex flex-col justify-evenly items-center custom-center'>
             <div className='w-[100px]'>
               <CircularProgressbar value={percentage} text={`${percentage}%`} styles={buildStyles({
                 textColor: "#1D396B",

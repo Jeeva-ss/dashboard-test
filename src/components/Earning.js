@@ -25,17 +25,17 @@ export const data = {
 
 export default function Earning() {
   return (
-    <div className='flex-auto w-72'>
+    <div className='flex-auto '>
       <Card >
-        <div className="flex justify-between">
-          <p className='text-xl text-indigo-blue font-bold'>Total Earnings</p>
+        <div className="flex justify-between mb-2">
+          <p className='text-xs md:text-xl text-indigo-blue font-bold'>Total Earnings</p>
           <div className='flex justify-between items-center gap-2'>
             <p className='text-gunmetal-black text-xs font-medium'>Day</p>
             <img src={DropDown} alt="arrowdown" />
           </div>
         </div>
         <div className='flex justify-evenly items-center'>
-          <div className='w-[200px]'>
+          <div className='w-[150px] md:w-[200px]'>
             <Doughnut data={data} />
           </div>
           <div>
