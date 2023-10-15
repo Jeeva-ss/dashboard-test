@@ -9,6 +9,7 @@ import Target from './components/Target';
 import Earning from './components/Earning';
 import ProfitLost from './components/ProfitLost';
 import Country from './components/Country';
+import Overview from './components/Overview';
 
 function App() {
   return (
@@ -17,9 +18,13 @@ function App() {
         <div className='hidden md:block bg-yankees-blue'>
           <Sidebar />
         </div>
-        <div className='grow '>
+        <div className='grow'>
           <div>
             <Navbar />
+          </div>
+          <p className='text-indigo-blue text-xl font-bold m-2'>Overview</p>
+          <div>
+            <Overview />
           </div>
           <div className='flex flex-wrap'>
             <Country />
